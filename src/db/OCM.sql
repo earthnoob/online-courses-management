@@ -1,6 +1,6 @@
 -- TODO: Implement required procedures.
 
-DROP DATABASE `online-courses-management`;
+DROP DATABASE IF EXISTS `online-courses-management`;
 CREATE DATABASE `online-courses-management`;
 ALTER DATABASE `online-courses-management` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -116,3 +116,5 @@ CREATE TABLE `account_lockdowns`(
   PRIMARY KEY (`lockdown_id`),
   CONSTRAINT fk_account_lockdowns FOREIGN KEY (`user_id`) REFERENCES `user`(`user_id`)
 );
+
+-- blah
