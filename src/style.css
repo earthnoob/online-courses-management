@@ -11,58 +11,81 @@ li.one{
     float:left;
     display: inline-block;
     padding: 0px;
-    margin: 10px;
+    margin: 20px;
+    line-height: 10px;
 }
 li.two{
-    line-height: 20px;
+    line-height: 10px;
     font-size: 20px;
     width: 100px;
     float:right;
     display: inline;
     padding: 0px;
-    margin: 10px; 
+    margin: 20px; 
+}
+
+#hidemenu a{
+  display: block;
+  text-align: center;
+  padding: 2px;
+  color:grey;
+  text-decoration: none;
+  font-weight:bold;
+}
+#hidemenu a:hover {
+    
+    background-color: #ddd;
+    color: black;
+    text-shadow: 0px 0px 1px #fff;
+    padding-left: 10px;
 }
 .image{
   /* hiện thỉ text trên ảnh, thì để ảnh dưới dạng background-image*/
-    background-image: url("background.jpg");
+    background-image: url("XYZ.jpg");
     background-size: cover; /*căn chỉnh kích thước ảnh phù hợp nhất với trang web*/
     background-position: center; /*lấy bộ cục chính của image*/
     height: 500px;
     line-height: 1.5; 
 }
 
+@media (max-width: 800px) /**/
+.contentpagetop {
+    top: 17%;
+    width: 79%;
+}
+
+
 .contentpagetop {
     position: absolute;
-    top: 26%;
+    top: 31.5%;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     line-height: 1;
     width: 60%;
+    height: 250px;
     color: #fff;
     background: rgba(0,0,0,.85);
     border-radius: 10px;
     padding: 20px 20px 20px 20px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .line-gradient {
-    content: '';
-    width: 150px;
-    height: 2px;
+    width: 250px;
+    height: 3px;
     position: absolute;
-    left: 50%;
+    left: 44.05%;
     margin: 0 0 0 -75px;
     background: #8ac249;
-    background: -moz-linear-gradient(left,rgba(138,194,73,1) 0%,rgba(0,188,212,1) 100%);
     background: -webkit-linear-gradient(left,rgba(138,194,73,1) 0%,rgba(0,188,212,1) 100%);
     background: linear-gradient(to right,rgba(138,194,73,1) 0%,rgba(0,188,212,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8ac249',endColorstr='#00bcd4',GradientType=1);
+    line-height: 2;
 }
 
-h2{
-    font-family: 'Roboto',sans-serif;
+h1{
+    padding: 5px;   
     font-weight: 300;
     font-size: 30px;
 }
@@ -81,24 +104,20 @@ h2{
 /*--------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------*/
 
-.input-group .form-control, .input-group-addon{
-    display: table-cell;
-}
-
 .input-group .form-control {
     position: relative;
     z-index: 2;
     float: left;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .form-control {
     display: block;
     width: 100%;
-    height: 34px;
+    height: 39px;
     padding: 6px 12px;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.42857143;
     color: #555;
     background-color: #fff;
@@ -108,8 +127,6 @@ h2{
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
 button, input{
@@ -125,13 +142,11 @@ button, input{
     position: relative;
     font-size: 0;
     white-space: nowrap;
-}
-.input-group-addon, .input-group-btn {
     width: 1%;
-    white-space: nowrap;
     vertical-align: middle;
 }
-.input-group .form-control, .input-group-addon, .input-group-btn {
+
+.input-group .form-control, .input-group-btn {
     display: table-cell;
 }
 
@@ -140,7 +155,7 @@ button, input{
 }
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
     z-index: 2;
-    margin-left: -1px;
+    margin-left: -2px;
 }
 .input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:first-child>.btn-group:not(:first-child)>.btn, .input-group-btn:first-child>.btn:not(:first-child), .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group>.btn, .input-group-btn:last-child>.dropdown-toggle {
     border-top-left-radius: 0;
@@ -149,23 +164,16 @@ button, input{
 .input-group-btn>.btn {
     position: relative;
 }
-.btn, .card, .img-circle, .panel, .content-card, .badge-author, .avatar-circle, .rightmenu.mobile, .logoutuser, .tip-profile, .subuser, .tab-menu, .top-badge {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-}
-.btn {
-    transition: .2s ease-out;
-    border: 0;
-    border-radius: 2px;
-}
+
 .btn-primary {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #FF6347;
     border-color: #2e6da4;
 }
 
 .btn-warning {
     color: #fff;
-    background-color: #f0ad4e;
+    background-color: #3277b3 ;
     border-color: #eea236;
 }
 
@@ -211,15 +219,31 @@ button, input, optgroup, select, textarea {
     color: inherit;
 }
 
-* {
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+:after, :before {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+* { 
+  /* nhằm đảm bảo padding và đường viền đc tính vào chiều rộng 
+    và chiều cao tổng thể của các ptu */
+  
+  /* thuộc tính box-sizing đc thiết lập là border-box*/
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .input-group {
     position: relative;
-    display: table;
+    display: table-row;
     border-collapse: separate;
 }
 
@@ -247,16 +271,9 @@ html {
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
 }
 :after, :before {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-:after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
