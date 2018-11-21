@@ -10,5 +10,9 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="/home/johnathan/apache-tomcat-9.0.12/lib/servlet-api.jar"/>
 	<classpathentry kind="lib" path="/home/johnathan/apache-tomcat-9.0.12/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="/home/johnathan/jBCrypt-0.4/src/org/mindrot/jbcrypt/jBcrypt.jar"/>
+	<classpathentry kind="lib" path="/home/johnathan/Repositories/online-courses-management/lib/taglibs-standard-impl-1.2.5.jar"/>
+	<classpathentry kind="lib" path="/home/johnathan/Repositories/online-courses-management/lib/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/johnathan/apache-tomcat-9.0.12/lib/mysql-connector-java-8.0.13.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
